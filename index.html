@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ණයක් සඳහා අයදුම් කරන්න</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        /* Background Video */
+        #background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .window {
+            background: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            border: 3px solid #000;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            background: navy;
+            color: white;
+            padding: 5px;
+            text-align: left;
+            font-weight: bold;
+            border-radius: 5px 5px 0 0;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #000;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .btn {
+            background: navy;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: darkblue;
+        }
+        
+        @media (max-width: 450px) {
+            body {
+                height: auto;
+                padding: 20px;
+            }
+            .window {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video id="background-video" autoplay muted loop>
+        <source src="https://videos.pexels.com/video-files/6282376/6282376-sd_640_360_30fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="window">
+        <div class="header">×</div>
+        <h3>ණයක් සඳහා අයදුම් කරන්න</h3>
+        <form onsubmit="return false">
+            <label>අවශ්‍යය ණය මුදල:</label>
+            <input type="number" id="loan_amount" placeholder="රු. 10000+" required>
+
+            <label>දුරකතන අංකය:</label>
+            <input type="tel" id="phone" placeholder="07XXXXXXXX" required>
+            
+            <label>නම:</label>
+            <input type="text" id="name" placeholder="ඔබගේ නම" required>
+            
+            <button type="button" class="btn" onclick="redirectToIkman()">කාඩ් පතට ලබා ගන්න</button>
+            <button type="button" class="btn" onclick="redirectToFacebook()">බැංකු ගිණුමට ලබා ගන්න</button>
+        </form>
+    </div>
+
+    <script>
+        function redirectToIkman() {
+            alert("අයදුම්පත සාර්ථකව යවා ඇත!");
+            window.location.href = "https://earningskingdeliberately.com/inv0479j?key=dd31a730c4e66217402ec7d1de3d05ef";
+        }
+        
+        function redirectToFacebook() {
+            alert("අයදුම්පත සාර්ථකව යවා ඇත!");
+            window.location.href = "https://earningskingdeliberately.com/inv0479j?key=dd31a730c4e66217402ec7d1de3d05ef";
+        }
+    </script>
+
+</body>
+</html>
